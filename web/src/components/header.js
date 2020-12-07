@@ -3,6 +3,9 @@ import React from 'react'
 import Icon from './icon'
 import {cn} from '../lib/helpers'
 
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faGithub} from '@fortawesome/fontawesome-free'
+
 import styles from './header.module.css'
 
 const Header = ({onHideNav, onShowNav, showNav, siteTitle}) => (
@@ -18,6 +21,9 @@ const Header = ({onHideNav, onShowNav, showNav, siteTitle}) => (
 
       <nav className={cn(styles.nav, showNav && styles.showNav)}>
         <ul>
+          <li>
+            <FontAwesomeIcon icon={faGithub} size='1x' />
+          </li>
           <li>
             <Link to='/about'>About Me</Link>
           </li>
