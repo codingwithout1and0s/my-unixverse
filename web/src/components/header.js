@@ -25,6 +25,9 @@ const Header = ({onHideNav, onShowNav, showNav, siteTitle}) => (
             <FontAwesomeIcon icon={faGithub} size='1x' />
           </li>
           <li>
+            <Link to='/blog/2020/12/1-100-days-of-code-git-commit-m-first-blog-post/'>#100daysofcode</Link>
+          </li>
+          <li>
             <Link to='/about'>About Me</Link>
           </li>
           <li>
