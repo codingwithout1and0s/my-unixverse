@@ -2,6 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 import ProfilePicture from '../assets/sung-wang.jpg'
 
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faGithub} from '@fortawesome/fontawesome-free'
+
 import './aside.css'
 
 const AsidePanel = styled.div`
@@ -20,6 +23,7 @@ function Aside () {
     <AsidePanel>
       <p>Hi. I'm Tang</p>
       <img src={ProfilePicture} alt='Sung Wang' />
+      <FontAwesomeIcon icon={faGithub} size='1x' />
       <p>Aspiring Dev | Javascript Monkey</p>
       <p>It's never too late to turn a hobby into a career</p>
       <p>

@@ -30,21 +30,25 @@ function BlogPost (props) {
           <div className={styles.mainContent}>
             <h1 className={styles.title}>{title}</h1>
             <h6>
+              <ul>
+                {categories.map(category => (
+                  <li key={category._id}>{category.title}</li>
+                ))}
+              </ul>
+              <span> || </span>
               {differenceInDays(new Date(publishedAt), new Date()) > 3
                 ? distanceInWords(new Date(publishedAt), new Date())
                 : format(new Date(publishedAt), 'MMMM Do, YYYY')}
             </h6>
-            {categories && (
-              <div className={styles.categories}>
-                <h5 className={styles.categoriesHeadline}>Categories</h5>
-                <ul>
-                  {categories.map(category => (
-                    <li key={category._id}>{category.title}</li>
-                  ))}
-                </ul>
-              </div>
-            )}
+            <div className={styles.categories}
             {_rawBody && <PortableText blocks={_rawBody} />}
+            <h5 className={styles.categoriesHeadline}>Categories</h5>
+            <ul>
+              {categories.map(category => (
+                <li key={category._id}>{category.title}</li>
+              ))}
+            </ul>
+            </div>
           </div>
           <Aside />
         </div>
