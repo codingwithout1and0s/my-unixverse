@@ -4,6 +4,7 @@ import {buildImageObj} from '../lib/helpers'
 import {imageUrlFor} from '../lib/image-url'
 import PortableText from './portableText'
 import Container from './container'
+import Aside from './aside'
 
 import styles from './blog-post.module.css'
 
@@ -28,14 +29,14 @@ function BlogPost (props) {
         <div className={styles.grid}>
           <div className={styles.mainContent}>
             <h1 className={styles.title}>{title}</h1>
-            <h4>
+            <h6>
               {differenceInDays(new Date(publishedAt), new Date()) > 3
                 ? distanceInWords(new Date(publishedAt), new Date())
                 : format(new Date(publishedAt), 'MMMM Do, YYYY')}
-            </h4>
+            </h6>
             {categories && (
               <div className={styles.categories}>
-                <h3 className={styles.categoriesHeadline}>Categories</h3>
+                <h5 className={styles.categoriesHeadline}>Categories</h5>
                 <ul>
                   {categories.map(category => (
                     <li key={category._id}>{category.title}</li>
@@ -45,6 +46,7 @@ function BlogPost (props) {
             )}
             {_rawBody && <PortableText blocks={_rawBody} />}
           </div>
+          <Aside />
         </div>
       </Container>
     </article>
