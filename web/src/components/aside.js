@@ -22,7 +22,7 @@ function Aside () {
   return (
     <AsidePanel>
       <p>Hi. I'm Tang</p>
-      <img src={ProfilePicture} alt='Sung Wang' />
+      <img id="ProfilePicture" src={ProfilePicture} alt='Sung Wang' />
       <FontAwesomeIcon icon={faGithub} size='1x' />
       <p>Aspiring Dev | Javascript Monkey</p>
       <p>It's never too late to turn a hobby into a career</p>

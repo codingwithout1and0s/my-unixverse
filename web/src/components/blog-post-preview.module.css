@@ -24,10 +24,12 @@
 .leadMediaThumb {
   position: relative;
   padding-bottom: 66.666%;
-  
+
   @nest & img {
     position: absolute;
-    top: 0;
+    box-shadow: 0.25rem 0.25rem 0.6rem rgba(0,0,0,0.05), 0 0.5rem 1.125rem rgba(75,0,0,0.05);
+    border-radius: 1rem;
+    top: -30px;
     left: 0;
     width: 100%;
     height: 100%;
@@ -63,8 +65,16 @@
   }
 }
 
-.date {
+.category {
+  margin: 0;
+  padding: 0;
   font-size: var(--font-small-size);
+  color: var(--color-gray);
+}
+
+.date {
+  padding-top: 0.5rem;
+  font-size: var(--font-micro-size);
   line-height: var(--font-small-line-height);
   color: var(--color-gray);
 }

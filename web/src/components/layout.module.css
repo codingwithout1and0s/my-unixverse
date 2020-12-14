@@ -8,12 +8,11 @@
 }
 
 .content {
-  background-image: url(../assets/pexels-josh-hild-5921872.jpg)!important;
-  background-color: var(--color-white);
+  background-color: var(--color-gray);
   min-height: calc(100% - 73px - 120px);
 
   @media (--media-min-small) {
-    background-color: var(--color-white);
+    background-color: var(--color-gray);
     min-height: calc(100% - 91px - 155px);
   }
 }
