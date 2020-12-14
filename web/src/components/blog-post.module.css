@@ -10,6 +10,8 @@
 .mainImage {
   display: block;
   position: relative;
+  width: 70vw;
+  margin: 0 auto;
   background: var(--color-very-light-gray);
   padding-bottom: calc(9 / 16 * 100%);
 

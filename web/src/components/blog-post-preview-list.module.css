@@ -24,6 +24,17 @@
   grid-row-gap: 2em;
 }
 
+.list {
+  background: white;
+    border-radius: 0 0.5rem 0.5rem 0.5rem;
+    box-shadow: 0.25rem 0.25rem 0.6rem rgba(0,0,0,0.05), 0 0.5rem 1.125rem rgba(75,0,0,0.05);
+    counter-increment: gradient-counter;
+    margin-top: 1rem;
+    min-height: 3rem;
+    padding: 1rem 1rem 1rem 1rem;
+    position: relative;
+}
+
 .browseMoreNav {
   composes: small from './typography.module.css';
   margin-top: 2rem;
@@ -32,7 +43,7 @@
   @nest & a {
     display: inline-block;
     padding: 0.5rem 0;
-    color: inherit;
+    color: var(--color-white);
     text-decoration: none;
 
     @media (hover: hover) {

@@ -2,8 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 
 const FooterBar = styled.div`
-background: #000;
-color: #fff;
+text-align: center;
+background-color: rgba(20, 20, 20, 0.1);
+color: #000;
 `
 
 const FooterComp = () => {

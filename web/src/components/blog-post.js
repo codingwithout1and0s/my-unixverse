@@ -38,16 +38,16 @@ function BlogPost (props) {
             )}
             {_rawBody && <PortableText blocks={_rawBody} />}
             <div>
-            {categories && (
-              <div className={styles.categories}>
-                <h3 className={styles.categoriesHeadline}>Categories</h3>
-                <ul>
-                  {categories.map(category => (
-                    <li key={category._id}>{category.title}</li>
-                  ))}
-                </ul>
-              </div>
-            )}
+              {categories && (
+                <div className={styles.categories}>
+                  <h3 className={styles.categoriesHeadline}>Categories</h3>
+                  <ul>
+                    {categories.map(category => (
+                      <li key={category._id}>{category.title}</li>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </div>
           </div>
           <Aside className={styles.metaContent} />

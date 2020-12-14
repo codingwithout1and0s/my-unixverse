@@ -7,6 +7,7 @@
 }
 
 .wrapper {
+  background-color: rgba(252, 252, 252, 0.25);
   box-sizing: border-box;
   margin: 0 auto;
   max-width: 960px;
@@ -15,6 +16,7 @@
 
   @media (--media-min-small) {
     padding: 1.5em 1.5em;
+    background-color: rgba(252, 252, 252, 0.25);
   }
 }
 
