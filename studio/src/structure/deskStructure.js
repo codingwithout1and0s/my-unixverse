@@ -1,10 +1,9 @@
 import S from '@sanity/desk-tool/structure-builder'
-import { MdSettings } from "react-icons/md";
-import {
-  MdPerson,
+import { MdSettings,
   MdDescription,
   MdLocalOffer
-} from "react-icons/md"
+} from 'react-icons/md'
+
 import IframePreview from '../previews/IframePreview'
 
 // Web preview configuration
@@ -22,7 +21,7 @@ export const getDefaultDocumentNode = props => {
    * https://www.sanity.io/docs/structure-builder-reference#getdefaultdocumentnode-97e44ce262c9
    */
   const { schemaType } = props
-  if (schemaType == 'post') {
+  if (schemaType === 'post') {
     return S.document().views([
       S.view.form(),
       S.view
