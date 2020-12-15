@@ -45,10 +45,6 @@ function SEO ({description, lang, meta, keywords, title, image}) {
                 content: 'summary'
               },
               {
-                name: 'twitter:creator',
-                content: siteAuthor
-              },
-              {
                 name: 'twitter:title',
                 content: title
               },
