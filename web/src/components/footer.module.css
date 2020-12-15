@@ -1,0 +1,11 @@
+@import '../styles/custom-media.css';
+@import '../styles/custom-properties.css';
+
+.root {
+    position: relative;
+    z-index: 100;
+    background: var(--color-accent);
+    text-align: center;
+    background-color: rgba(20, 20, 20, 0.1);
+    color: #000;
+  }

@@ -4,12 +4,14 @@
 .root {
   position: relative;
   z-index: 100;
+  background: var(--color-gray);
 }
 
 .wrapper {
   background-color: rgba(252, 252, 252, 0.25);
   box-sizing: border-box;
   margin: 0 auto;
+  /* outline: 3px dotted yellow; */
   max-width: 960px;
   padding: 1em;
   display: flex;
