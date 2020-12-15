@@ -8,7 +8,10 @@ html {
 
 body {
   -webkit-font-smoothing: antialiased;
-  background-color: var(--color-white);
+  /* background-image: url(../assets/pexels-josh-hild-5921872.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; */
+  background-color: var(--color-light-gray);
   color: var(--color-black);
   margin: 0;
 }

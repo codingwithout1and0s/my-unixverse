@@ -1,6 +1,8 @@
 .root {
     text-align: center;
     font-size: 0.8em;
+    padding: 1em;
+    border-left: 1px solid red;
 }
 
 #ProfilePicture {
@@ -8,6 +10,5 @@
     height: 200px;
     border: 1px solid #ddd;
     border-radius: 4px;
-    padding: 5px;
-    outline: 2px solid green;
+    padding: 0.5em;
 }
